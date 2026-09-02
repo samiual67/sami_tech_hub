@@ -3,7 +3,15 @@ import './Hero.css'
 import hand_icon from "../Assets/hand_icon.png";
 import arrow_icon from "../Assets/arrow.png";
 import hero_img from "../Assets/hero_image.png";
+
 const Hero = () => {
+    const scrollToNewCollections = () => {
+        const section = document.getElementById('new-collections-section');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className='hero'>
 
@@ -18,7 +26,7 @@ const Hero = () => {
                     <p>collection</p>
                     <p>for everyone</p>
                 </div>
-                <div className="hero-latest-btn">
+                <div className="hero-latest-btn" onClick={scrollToNewCollections}>
                     <div>
                         Latest Collection
                     </div>
@@ -28,7 +36,7 @@ const Hero = () => {
 
 
             <div className="hero-right">
-                <img src={ hero_img} alt="" />
+                <img src={hero_img} alt="" />
 
             </div>
         </div>

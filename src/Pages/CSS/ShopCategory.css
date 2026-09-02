@@ -27,9 +27,41 @@
 }
 
 .shopcategory-sort {
+    position: relative;
     padding: 10px 20px;
     border-radius: 20px;
     border: 1px solid #888;
+    cursor: pointer;
+    user-select: none;
+}
+
+.shopcategory-sort-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    min-width: 220px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.shopcategory-sort-option {
+    padding: 12px 18px;
+    font-size: 15px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.shopcategory-sort-option:hover {
+    background: #f5f5f5;
+}
+
+.shopcategory-sort-option.active {
+    background: #fce1e4;
+    font-weight: 600;
 }
 
 /* PRODUCTS GRID */
