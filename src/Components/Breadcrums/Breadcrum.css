@@ -1,0 +1,76 @@
+.Breadcrum {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 60px 170px;
+    text-transform: capitalize;
+}
+
+.Breadcrum img {
+    width: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1280px) {
+
+    .Breadcrum {
+        margin: 50px 80px;
+        font-size: 15px;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .Breadcrum {
+        margin: 40px 50px;
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    .Breadcrum img {
+        width: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .Breadcrum {
+        margin: 30px 20px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .Breadcrum img {
+        width: 7px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    .Breadcrum {
+        margin: 20px 15px;
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .Breadcrum img {
+        width: 6px;
+    }
+}
